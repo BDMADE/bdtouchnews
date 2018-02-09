@@ -1,0 +1,436 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"college"
+			],
+			[
+				"hea",
+				"header-page"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"t",
+				"td\tTag"
+			],
+			[
+				"p",
+				"php\t<?php … ?>"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"mar",
+				"margin-bottom0"
+			],
+			[
+				"tim",
+				"timing"
+			],
+			[
+				"re",
+				"redirect"
+			],
+			[
+				"as",
+				"assert"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"word",
+				"wordpress"
+			],
+			[
+				"be",
+				"be_true"
+			],
+			[
+				"compl",
+				"Complete"
+			],
+			[
+				"ini",
+				"initializing"
+			],
+			[
+				"front",
+				"frontend"
+			],
+			[
+				"better",
+				"better_errors"
+			],
+			[
+				"insta",
+				"installing"
+			],
+			[
+				"in",
+				"initialize"
+			],
+			[
+				"le",
+				"latest"
+			],
+			[
+				"grid",
+				"grid_name"
+			],
+			[
+				"N",
+				"NULL"
+			],
+			[
+				"pr",
+				"pronto-rails_schema"
+			],
+			[
+				"pronto",
+				"pronto-rails_best_practices"
+			],
+			[
+				"r",
+				"rubocop"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: i",
+		"selected_items":
+		[
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby on Rails"
+			]
+		],
+		"width": 497.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"help()",
+			"exit"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/hmtanbir/www/framework/django/bdtouchnews",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/video"
+	],
+	"file_history":
+	[
+		"/home/hmtanbir/www/framework/django/bdtouchnews/video/models.py",
+		"/home/hmtanbir/www/framework/angular/dev/ng-video-app/src/app/app.component.ts",
+		"/home/hmtanbir/www/framework/angular/dev/ng-video-app/src/app/app.component.html",
+		"/home/hmtanbir/www/framework/typescript/dev/test1/main.ts",
+		"/home/hmtanbir/www.pid",
+		"/home/hmtanbir/Desktop/heroku/arm/domains-enabled/localhost9090.conf",
+		"/home/hmtanbir/Desktop/heroku/arm/domains-enabled/Readme.md",
+		"/home/hmtanbir/www/framework/laravel/hallooh/app/Http/Middleware/LoadConfig.php",
+		"/home/hmtanbir/www/framework/laravel/hallooh/config/app.php",
+		"/home/hmtanbir/www/dbm/phpliteAdmin_hallooh/index.php",
+		"/home/hmtanbir/www/dbm/phpLiteAdmin1971/phpliteadmin.php",
+		"/home/hmtanbir/Downloads/phpLiteAdmin_v1-9-7-1/phpliteadmin.config.sample.php",
+		"/home/hmtanbir/www/framework/laravel/team1/config/database.php",
+		"/home/hmtanbir/www/framework/laravel/hallooh/config/database.php",
+		"/home/hmtanbir/www/framework/laravel/halloh/config/database.php",
+		"/home/hmtanbir/Desktop/heroku/arm/app/controllers/admin/StudentController.php",
+		"/home/hmtanbir/Desktop/heroku/arm/app/controllers/UserController.php",
+		"/home/hmtanbir/Desktop/heroku/arm/app/controllers/admin/AdminController.php",
+		"/home/hmtanbir/Desktop/heroku/arm/app/routes.php",
+		"/home/hmtanbir/Desktop/heroku/arm/app/views/layouts/nav_left_side.blade.php",
+		"/home/hmtanbir/Desktop/heroku/arm/readme_db.txt",
+		"/home/hmtanbir/Desktop/heroku/arm/app/config/database.php",
+		"/media/hmtanbir/bdmade/WebDevelopment/Open_Source_System/Assets/ARM_DEI/databaseBackup/mdb.js",
+		"/media/hmtanbir/bdmade/WebDevelopment/Open_Source_System/Assets/ARM_DEI/databaseBackup/mongo-dei-20150823-110733.js",
+		"/media/hmtanbir/bdmade/WebDevelopment/Open_Source_System/_Framework/Laravel/Doc/shortcut_heroku_upload.txt",
+		"/home/hmtanbir/Desktop/heroku/arm/composer.json",
+		"/media/hmtanbir/bdmade/Software/Linux/LAMP/v3/LAMP/install.sh",
+		"/media/hmtanbir/bdmade/Software/Linux/LAMP/v3/LAMP/lamp.sh",
+		"/home/hmtanbir/www/rockmongo/config.php",
+		"/home/hmtanbir/www/rockmongo/config.sample.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/views/bd/INDEX_view.php",
+		"/media/hmtanbir/bdmade/WebDevelopment/Open_Source_System/_CMS/Joomla/Installation/joomla_installed_with_full_website/joomla_installed/Joomla_app_plazza_quickstart/localhost.sql",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/db/data.sql",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/config/config.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/config/constants1.php.save",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/config/database.old.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/config/database_2.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/controllers/admin/manage.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/controllers/front.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/controllers/test.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/db/CONFIG.BAT",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/db/SAVE/data_old.sql",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/db/SAVE/structure_old.sql",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/db/data_new/data_only_4_admin.sql",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/views/bd/meta_view.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/views/front/TYPE3_view.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/views/front/TYPE4_view.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/views/front/chobir_kotha_view.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/examples_database.sql",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/nbproject/private/private.properties",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/readme.txt",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/config/database.php",
+		"/home/hmtanbir/www/project_zip/buft",
+		"/home/hmtanbir/www/project_zip/labchem/system/core/Common.php",
+		"/home/hmtanbir/www/project_zip/gemtex/application/config/config.php",
+		"/home/hmtanbir/www/project_zip/gemtex/system/core/Common.php",
+		"/home/hmtanbir/www/project_zip/labchem/application/config/config.php",
+		"/home/hmtanbir/www/project_zip/bdnews/application/config/config.php",
+		"/home/hmtanbir/Desktop/ssdnodes.txt",
+		"/home/hmtanbir/www/project_zip/bdnews/system/core/Common.php",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter5-Conditionals-and-Control-Flow/l1.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter4-Date-and-Time/l6.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter4-Date-and-Time/l5.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter4-Date-and-Time/l1.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter4-Date-and-Time/l2.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter4-Date-and-Time/l3.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter4-Date-and-Time/l4.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l12.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l13.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l14.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l15.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l16.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l10.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l11.py",
+		"/home/hmtanbir/Desktop/upwork/l8.py",
+		"/home/hmtanbir/Desktop/upwork/l9.py",
+		"/home/hmtanbir/Desktop/upwork/l4.py",
+		"/home/hmtanbir/Desktop/upwork/l5.py",
+		"/home/hmtanbir/Desktop/upwork/l6.py",
+		"/home/hmtanbir/Desktop/upwork/l7.py",
+		"/home/hmtanbir/Desktop/upwork/cover_letter.txt",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/db/structure.sql",
+		"/home/hmtanbir/www/project_zip/bdnews/application/db/data.sql",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/prayer_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/rashifal_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/sliderpics_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/votes_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/vs_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/news_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/auth_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/ads_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/categories_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/application/models/comments_model.php",
+		"/home/hmtanbir/www/framework/codeigniter/Project/DoinikDhaka/system/core/Common.php",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l1.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l2.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter3-Strings-and-Console-Output/l3.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter2-Tip-Calculator/l4.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter2-Tip-Calculator/l5.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter2-Tip-Calculator/l1.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter2-Tip-Calculator/l2.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter2-Tip-Calculator/l3.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l10.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l11.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l12.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l13.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l8.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l9.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l5.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l6.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l7.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l1.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l2.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l3.py",
+		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l4.py",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/other-announcement.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/board-of-directors.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/corporate-governance.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/management-team.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/disposable-products.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/pvc.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/our-customers.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/quality.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/javascripts2.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/javascripts.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/head.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/head2.php",
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/contact-us.php"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bdtouchnews.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rout",
+				"app/Http/routes.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 371.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
