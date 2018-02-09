@@ -10,6 +10,10 @@ class Video(models.Model):
     ts = models.DateTimeField(auto_now=True)
     image_file = models.ImageField(max_length=255)
     image_click_url = models.CharField(max_length=255)
+
+    class Meta:
+    	verbose_name = "Video News"
+    	verbose_name_plural = "Video news"
 	    
     
     def __unicode__(self):
