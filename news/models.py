@@ -39,7 +39,7 @@ class News(models.Model):
     """
     Description: News model
     """
-    ts = models.DateTimeField(auto_now=True)
+    publication_time = models.DateTimeField(auto_now=True)
     headline = models.CharField(max_length=255, unique=True)
     category = models.ManyToManyField(Category)
     image_file = models.ImageField(blank=True)
