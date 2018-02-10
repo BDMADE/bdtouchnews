@@ -21,6 +21,7 @@ class CategoryAdmin(admin.ModelAdmin):
     list_filter = ('type', )
     ordering = ('name', 'bangla_name', 'type', )
 
+
 class NewsAdmin(admin.ModelAdmin):
     def edit(self, obj):
         return format_html('<a class="btn" href="/admin/news/news/{}/change/">Edit</a>', obj.id)

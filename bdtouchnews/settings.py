@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'prayer.apps.PrayerConfig',
     'news.apps.NewsConfig',
     'advertisement.apps.AdvertisementConfig',
     'speech.apps.SpeechConfig', 
