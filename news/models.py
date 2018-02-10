@@ -42,7 +42,7 @@ class News(models.Model):
     publication_time = models.DateTimeField(auto_now=True)
     headline = models.CharField(max_length=255, unique=True)
     category = models.ManyToManyField(Category)
-    image_file = models.ImageField(blank=True)
+    image_file = models.ImageField(blank=True, max_length=255, upload_to='images/news/')
     content = models.TextField()
     meta = models.TextField(verbose_name='Meta for browser')
     reporter = models.CharField(max_length=255, blank=True, default='Online')

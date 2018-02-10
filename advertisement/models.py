@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 
+
 # Create your models here.
 
 
@@ -61,17 +62,17 @@ class Advertisement(models.Model):
     """
     ACTIVE = '1'
     INACTIVE = '0'
-    ADSTATUS_CHOICES = ((ACTIVE,'active'), (INACTIVE, 'inactive'))
+    ADSTATUS_CHOICES = ((ACTIVE, 'active'), (INACTIVE, 'inactive'))
 
     ts = models.DateTimeField(auto_now=True)
-    image_file = models.ImageField()
+    image_file = models.ImageField(max_length=255, blank=True, upload_to='images/ads/')
     image_click_url = models.CharField(max_length=255)
     notes = models.TextField()
 
     company = models.OneToOneField(Company, on_delete=models.CASCADE)
     adspace = models.OneToOneField(Adspace, on_delete=models.CASCADE)
 
-    status = models.CharField(choices= ADSTATUS_CHOICES, max_length=2, default=INACTIVE)
+    status = models.CharField(choices=ADSTATUS_CHOICES, max_length=2, default=INACTIVE)
 
     class Meta:
         verbose_name = "Ads"
