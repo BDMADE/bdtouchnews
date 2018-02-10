@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"A",
+				"AdsStatus"
+			],
+			[
+				"v",
+				"verbose_name_plural"
+			],
+			[
+				"D",
+				"DateTimeField"
+			],
+			[
+				"ma",
+				"max_length"
+			],
+			[
+				"ima",
+				"image_click_url"
+			],
+			[
+				"mode",
+				"models"
+			],
+			[
+				"mod",
+				"models"
+			],
+			[
 				"co",
 				"college"
 			],
@@ -18,10 +46,6 @@
 			[
 				"a",
 				"auto"
-			],
-			[
-				"ma",
-				"margin"
 			],
 			[
 				"b",
@@ -123,6 +147,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "advertisement/models.py",
+			"settings":
+			{
+				"buffer_size": 2264,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bdtouchnews/settings.py",
+			"settings":
+			{
+				"buffer_size": 3980,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "advertisement/apps.py",
+			"settings":
+			{
+				"buffer_size": 206,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -155,6 +206,7 @@
 		"height": 157.0,
 		"history":
 		[
+			"python manage.py help",
 			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
 			"help()",
 			"exit"
@@ -172,11 +224,22 @@
 	"expanded_folders":
 	[
 		"/home/hmtanbir/www/framework/django/bdtouchnews",
-		"/home/hmtanbir/www/framework/django/bdtouchnews/video"
+		"/home/hmtanbir/www/framework/django/bdtouchnews/advertisement",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/slider"
 	],
 	"file_history":
 	[
 		"/home/hmtanbir/www/framework/django/bdtouchnews/video/models.py",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/speech/apps.py",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/speech/admin.py",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/speech/models.py",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/slider/apps.py",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/bdtouchnews/settings.py",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/slider/models.py",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/slider/admin.py",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/video/admin.py",
+		"/home/hmtanbir/www/framework/django/bdtouchnews/requirements.txt",
+		"/home/hmtanbir/www/dbm/phpliteAdmin_bdtouchnews/index.php",
 		"/home/hmtanbir/www/framework/angular/dev/ng-video-app/src/app/app.component.ts",
 		"/home/hmtanbir/www/framework/angular/dev/ng-video-app/src/app/app.component.html",
 		"/home/hmtanbir/www/framework/typescript/dev/test1/main.ts",
@@ -293,17 +356,7 @@
 		"/media/hmtanbir/bdmade/WebDevelopment/CodeAcademy/Python/chapter1/l4.py",
 		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/other-announcement.php",
 		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/board-of-directors.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/corporate-governance.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/management-team.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/disposable-products.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/pvc.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/our-customers.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/quality.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/javascripts2.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/javascripts.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/head.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/head2.php",
-		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/contact-us.php"
+		"/home/hmtanbir/www/framework/bootstrap/theme/NEWThemes/shurwid/corporate-governance.php"
 	],
 	"find":
 	{
@@ -338,8 +391,96 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "advertisement/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1581,
+								1581
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 381.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "bdtouchnews/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1017,
+								1017
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "advertisement/apps.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								205,
+								205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],

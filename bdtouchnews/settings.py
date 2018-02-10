@@ -33,6 +33,9 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'advertisement.apps.AdvertisementConfig',
+    'speech.apps.SpeechConfig', 
+    'slider.apps.SliderConfig',
     'video.apps.VideoConfig', 
     'django.contrib.admin',
     'django.contrib.auth',
