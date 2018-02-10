@@ -10,7 +10,8 @@ class Configuration(models.Model):
     """
     Description: Configuration Model
     """
-    ts = models.DateTimeField(auto_now=True)
+    name = models.CharField(max_length=255, default='Config 1', unique=True)
+    ts = models.DateTimeField(auto_now=True, verbose_name='Created at')
     # header
     on_test = models.BooleanField(default=True)
     search = models.BooleanField(default=True)
@@ -81,3 +82,13 @@ class Configuration(models.Model):
     default_slider_image = models.CharField(max_length=255, default='assets/uploads/slider/default.jpg')
     default_video_image = models.CharField(max_length=255, default='assets/uploads/video/no-image.png')
     sorry_nothing_found = models.CharField(max_length=255, default='দুঃখিত, কোন ফলাফল পাওয়া যায়নি')
+
+    class Meta:
+        verbose_name = "News Configuration"
+        verbose_name_plural = "News Configuration"
+
+    def __unicode__(self):
+        return self.name
+
+    def __str__(self):
+        return self.name
