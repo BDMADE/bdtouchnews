@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'website.apps.WebsiteConfig',
     'configuration.apps.ConfigurationConfig',
     'horoscope.apps.HoroscopeConfig',
     'prayer.apps.PrayerConfig',
