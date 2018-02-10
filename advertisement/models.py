@@ -8,7 +8,7 @@ from django.db import models
 
 class Company(models.Model):
     """
-    Description: Company
+    Description: Company model
     """
     ts = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=255, unique=True)
@@ -57,7 +57,7 @@ class Adspace(models.Model):
 
 class Advertisement(models.Model):
     """
-    Description: Adspace model
+    Description: Ads model
     """
     ACTIVE = '1'
     INACTIVE = '0'
