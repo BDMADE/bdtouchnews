@@ -30,6 +30,9 @@ class Poll(models.Model):
         return Vote.objects.filter(poll=self).count()
     vote_count = property(fget=get_vote_count)
 
+    def get_cookie_name(self):
+        return 'poll_%s' % self.pk
+
 
 class Item(models.Model):
     value = models.CharField(max_length=255, unique=True)
