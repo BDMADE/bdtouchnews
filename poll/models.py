@@ -3,11 +3,13 @@ from __future__ import unicode_literals
 
 from django.db import models
 
+import datetime
+
 # Create your models here.
 
 
 class Poll(models.Model):
-    date = models.DateField()
+    date = models.DateField(default=datetime.date.today)
     question = models.CharField(max_length=255, unique=True)
     is_published = models.BooleanField(default=True)
 
