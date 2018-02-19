@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="row" style="margin-bottom: 25px;">
+    <div class="col-md-8">
+        <img src="http://localhost/project_zip/bdnews/assets/uploads/news/no-image.png" class="img-responsive news_detail_image"
+            style="float:left">
+
+        <h4 style="padding-bottom: 25px;">
+            <pre>
+            <h2 style="margin-top: -20px;">{{news.headline|safe}}</h2>           
+            {{news.content|safe}}  
+            </pre>
+        </h4>
+    </div>
+</div>
+
+
+<h2 style="margin-bottom: 10px;"> এই ক্যাটেগরির অন্যান্য সংবাদসমূহ </h2>
+<div class="row">
+    {% for other_news in other_news %}
+    <div class="col-md-8">
+        <div class="cat-box">
+            <h2 style="padding-bottom: 5px;">
+                <a href="{% url 'home:news_details' other_news.pk %}">{{other_news.headline|safe}}</a>
+            </h2>
+
+            <a href="{% url 'home:news_details' other_news.pk %}">
+                    <img src="{% if other_news.image_file %}{{ other_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                    class="img-responsive small"/>
+            </a>
+            <h4>{{other_news.content|safe|truncatewords:12}}</h4>
+
+            <div class="bottom" style="border-bottom: none;">                
+                <div class="holder">
+                    <a href="{% url 'home:news_details' other_news.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+        </div>
+        <div style="padding-bottom: 15px;"></div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+
+{% endblock %}

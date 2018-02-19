@@ -18,8 +18,8 @@ class Category(models.Model):
     NEWS_CATEGORY_CHOICES = ((TYPE1, 'Type 1'), (TYPE2, 'Type 2'), (TYPE3, 'Type 3'), (TYPE4, 'Type 4'), (NONE, 'None'))
 
     ts = models.DateTimeField(auto_now=True)
-    name = models.CharField(max_length=255)
-    bangla_name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
+    bangla_name = models.CharField(max_length=255, unique=True)
     description = models.TextField(blank=True)
 
     type = models.CharField(choices= NEWS_CATEGORY_CHOICES, max_length=2, default=NONE)
@@ -39,14 +39,15 @@ class News(models.Model):
     """
     Description: News model
     """
-    publication_time = models.DateTimeField(auto_now=True)
     headline = models.CharField(max_length=255, unique=True)
     category = models.ManyToManyField(Category)
     image_file = models.ImageField(blank=True, max_length=255, upload_to='images/news/')
     content = models.TextField()
-    meta = models.TextField(verbose_name='Meta for browser')
-    reporter = models.CharField(max_length=255, blank=True, default='Online')
+    reporter = models.CharField(max_length=255, blank=True, default='অনলাইন প্রতিবেদক')
     hits = models.IntegerField(default=0)
+    # timestamp
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         verbose_name = "News"

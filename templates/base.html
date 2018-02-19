@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    {% include "meta.html" %}
+    {% include "css.html" %}    
+    {% include "js.html" %}
+</head>
+
+<body style="overflow-x: hidden;">
+<div class="container">
+    {% include "on_test.html" %}
+    {% include "logo.html" %}
+    {% include "header_date_and_search.html" %}
+    {% include "navigation.html" %}
+    {% include "breaking_news.html" %}
+    {% include "news_headline.html" %}
+    {% block content %} {% endblock content %}
+    {% include "footer.html" %}
+</div>
+
+</body>
+</html>

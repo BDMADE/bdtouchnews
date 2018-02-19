@@ -29,12 +29,12 @@ class NewsAdmin(admin.ModelAdmin):
     def delete(self, obj):
         return format_html('<a class="btn" href="/admin/news/news/{}/delete/">Delete</a>', obj.id)
 
-    list_display = ('headline', 'reporter', 'hits', 'publication_time', 'edit', 'delete')
+    list_display = ('headline', 'reporter', 'hits', 'created_at', 'edit', 'delete')
     search_fields = ('headline', 'reporter')
     filter_horizontal = ('category', )
-    list_filter = ('publication_time', 'reporter', 'category', )
-    date_hierarchy = 'publication_time'
-    ordering = ('headline', 'reporter', 'hits', 'publication_time', )
+    list_filter = ('created_at', 'reporter', 'category', )
+    date_hierarchy = 'created_at'
+    ordering = ('headline', 'reporter', 'hits', 'created_at', )
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(News, NewsAdmin)

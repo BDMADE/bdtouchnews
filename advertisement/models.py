@@ -79,7 +79,7 @@ class Advertisement(models.Model):
         verbose_name_plural = "Ads"
 
     def __unicode__(self):
-        return self.name
+        return self.notes
 
     def __str__(self):
-        return self.name
+        return self.notes

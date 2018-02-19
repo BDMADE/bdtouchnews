@@ -151,7 +151,7 @@
 			"file": "advertisement/models.py",
 			"settings":
 			{
-				"buffer_size": 2264,
+				"buffer_size": 2408,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -160,7 +160,7 @@
 			"file": "bdtouchnews/settings.py",
 			"settings":
 			{
-				"buffer_size": 3980,
+				"buffer_size": 4166,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -223,9 +223,6 @@
 	},
 	"expanded_folders":
 	[
-		"/home/hmtanbir/www/framework/django/bdtouchnews",
-		"/home/hmtanbir/www/framework/django/bdtouchnews/advertisement",
-		"/home/hmtanbir/www/framework/django/bdtouchnews/slider"
 	],
 	"file_history":
 	[
@@ -400,15 +397,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2264,
+						"buffer_size": 2408,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1581,
-								1581
+								0,
+								0
 							]
 						],
 						"settings":
@@ -429,15 +426,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3980,
+						"buffer_size": 4166,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1017,
-								1017
+								0,
+								0
 							]
 						],
 						"settings":

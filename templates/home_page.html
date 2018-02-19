@@ -1,0 +1,1976 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+    {# adspace 123 #}
+    <div class="row"> 
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">       
+                <a href=http://yahoo.com >
+                    <img src="assets/uploads/ads/c8178-amin_mohammad_group-.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+              
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">       
+                <a href=http:// >
+                    <img src="assets/uploads/ads/call-for-ad.png" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+                
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">       
+                <a href=http:// >
+                    <img src="assets/uploads/ads/71dcd-basic-bank.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+                </div>
+    {# newsbox pos1_5-slider-ads4-pos6_9-speech-tab1-vote #}
+    <div class="row">
+        <div class="col-md-4">
+
+            {# position 1 #}
+            <div class="newsbox">
+                <h2>
+                    <a href="{% url 'home:news_details' position_1_news.pk %}" target="_blank">{{ position_1_news.headline | safe }}</a>
+                </h2>
+
+                <a href="{% url 'home:news_details' position_1_news.pk %}" target="_blank">
+                    <img src="{% if position_1_news.image_file %}{{ position_1_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+                </a>
+
+                <div class="author">{{ position_1_news.reporter }}</div>
+
+                <h4>{{ position_1_news.content|truncatewords:38 }}</h4>
+
+                <div class="bottom">
+                    <!--<div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' position_1_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+
+            {# position 2 #}
+            <div class="newsbox">
+                <h2>
+                    <a href="{% url 'home:news_details' position_2_news.pk %}" target="_blank">{{ position_2_news.headline|safe }}</a>
+                </h2>
+
+
+                <a href="{% url 'home:news_details' position_2_news.pk %}" target="_blank">
+                    <img src="{% if position_2_news.image_file %}{{ position_2_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+                </a>
+
+                <div class="author">{{ position_2_news.reporter }}</div>
+
+                <h4> {{ position_2_news.content | truncatewords:38 }} </h4>
+
+                <div class="bottom">
+                    <!--<div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' position_2_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+
+            {# position 3 #}
+            <div class="newsbox">
+                <h2>
+                    <a href="{% url 'home:news_details' position_3_news.pk %}" target="_blank">{{ position_3_news.headline|safe }}</a>
+                </h2>
+
+
+                <a href="{% url 'home:news_details' position_5_news.pk %}" target="_blank">
+                    <img src="{% if position_3_news.image_file %}{{ position_3_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+                </a>
+
+                <div class="author">{{ position_3_news.reporter }}</div>
+
+                <h4>{{ position_3_news.content|truncatewords:38 }}</h4>
+
+                <div class="bottom">
+                    <!--<div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' position_3_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+
+            {# position 4 #}
+            <div class="newsbox">
+                <h2>
+                    <a href="{% url 'home:news_details' position_4_news.pk %}" target="_blank">{{ position_4_news.headline|safe }}</a>
+                </h2>
+
+
+                <a href="{% url 'home:news_details' position_5_news.pk %}" target="_blank">
+                    <img src="{% if position_4_news.image_file %}{{ position_4_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+                </a>
+
+                <div class="author">{{ position_4_news.reporter }}</div>
+
+                <h4>{{ position_4_news.content | truncatewords:38 }}</h4>
+
+                <div class="bottom">
+                    <!--<div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' position_4_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+
+            {# position 5 #}
+            <div class="newsbox">
+                <h2>
+                    <a href="{% url 'home:news_details' position_5_news.pk %}" target="_blank">{{ position_5_news.headline|safe }}</a>
+                </h2>
+
+
+                <a href="{% url 'home:news_details' position_5_news.pk %}" target="_blank">
+                    <img src="{% if position_5_news.image_file %}{{ position_5_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+                </a>
+
+                <div class="author">{{ position_5_news.reporter }}</div>
+
+                <h4>{{ position_5_news.content|truncatewords:38 }}</h4>
+
+                <div class="bottom">
+                    <!--<div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' position_5_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            {#    slider 1   #}
+            <div class="flexslider" id="slider">
+                <ul class="slides">
+                    <li data-thumb="http://172.93.55.200/bdnews/assets/uploads/sliders/a77ec-14.jpg">
+                        <img src="http://172.93.55.200/bdnews/assets/uploads/sliders/a77ec-14.jpg"/>
+                    </li>
+                    <li data-thumb="http://172.93.55.200/bdnews/assets/uploads/sliders/edf83-15.jpg">
+                        <img src="http://172.93.55.200/bdnews/assets/uploads/sliders/edf83-15.jpg"/>
+                    </li>
+                    <li data-thumb="http://172.93.55.200/bdnews/assets/uploads/sliders/ee54e-16.jpg">
+                        <img src="http://172.93.55.200/bdnews/assets/uploads/sliders/ee54e-16.jpg"/>
+                    </li>
+                    <li data-thumb="http://172.93.55.200/bdnews/assets/uploads/sliders/1f4e3-18.jpg">
+                        <img src="http://172.93.55.200/bdnews/assets/uploads/sliders/1f4e3-18.jpg"/>
+                    </li>
+                </ul>
+            </div>
+            {# adspace 4 #}
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/832ff-brother_final.gif" width="100%" height="100%">
+                </a>
+            </div>
+
+            {# position 6 #}
+            <div class="newsbox">
+                <h2>
+                    <a href="{% url 'home:news_details' position_6_news.pk %}" target="_blank">{{ position_6_news.headline|safe }}</a>
+                </h2>
+
+
+                <a href="{% url 'home:news_details' position_6_news.pk %}" target="_blank">
+                    <img src="{% if position_6_news.image_file %}{{ position_6_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+                </a>
+
+                <div class="author">{{ position_6_news.reporter }}</div>
+
+                <h4>{{ position_6_news.content|truncatewords:38 }}</h4>
+
+                <div class="bottom">
+                    <!--            <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' position_6_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+            {# position 7 #}
+            <div class="newsbox">
+                <h2>
+                    <a href="{% url 'home:news_details' position_7_news.pk %}" target="_blank">{{ position_7_news.headline|safe }}</a>
+                </h2>
+
+
+                <a href="{% url 'home:news_details' position_7_news.pk %}" target="_blank">
+                    <img src="{% if position_7_news.image_file %}{{ position_7_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+                </a>
+                <div class="author">{{ position_7_news.reporter }}</div>
+
+                <h4>{{ position_7_news.content | truncatewords:38 }}</h4>
+
+                <div class="bottom">
+                    <!--            <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' position_7_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+            {# position 8 #}
+            <div class="newsbox">
+                <h2>
+                    <a href="{% url 'home:news_details' position_8_news.pk %}" target="_blank">{{ position_8_news.headline|safe }}</a>
+                </h2>
+
+
+                <a href="{% url 'home:news_details' position_8_news.pk %}" target="_blank">
+                    <img src="{% if position_8_news.image_file %}{{ position_8_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+                </a>
+
+                <div class="author">{{ position_8_news.reporter }}</div>
+
+                <h4>{{ position_8_news.content|truncatewords:38 }}</h4>
+
+                <div class="bottom">
+                    <!--            <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' position_8_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+            {# position 9 #}
+            <div class="newsbox">
+                <h2>
+                    <a href="{% url 'home:news_details' position_9_news.pk %}" target="_blank">{{ position_9_news.headline|safe }}</a>
+                </h2>
+
+
+                <a href="{% url 'home:news_details' position_9_news.pk %}" target="_blank">
+                    <img src="{% if position_9_news.image_file %}{{ position_9_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+                </a>
+
+                <div class="author">{{ position_9_news.reporter }}</div>
+
+                <h4>{{ position_9_news.content|truncatewords:38 }}</h4>
+
+                <div class="bottom">
+                    <!--            <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' position_9_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            {# news popular speech #}
+            <div class="newsbox alochito-kotha">
+                <!--CSS class alochito-kotha does nothing-->
+                <div class="title" style="margin-bottom: 10px;"> আলোচিত কথা</div>
+                <h4> {{ popular_news.content | truncatewords:55 }} </h4>
+                <div class="bottom">
+                    <div class="holder">
+                        <a href="{% url 'home:news_details' popular_news.pk %}" target="_blank">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+
+            {# news tab 1 #}
+            {% include 'tab1.html' %}
+            {#   vote     #}
+            <a href="javascript:void(0)">
+                <img src="http://172.93.55.200/bdnews/assets/front/images/vote.jpg" title="bdtouchnews"
+                     class="img-responsive">
+            </a>
+
+            <center>
+                <form class='ajax-poll-form' tid='demo1' action='index.php/front/cast_vote'
+                      style="height: 365px; background-color: #ECEADD;">
+                    <div class='ajax-poll-title' style="margin-bottom: 10px;">
+                        ইপিজেডে শ্রমিকদের সংগঠন করার সুযোগ রেখে শ্রম আইন করা শ্রমিক অধিকার রক্ষায় ভূমিকা রাখবে বলে মনে
+                        করেন কি?
+                    </div>
+
+                    <div class='ajax-poll-item' tid='yes'>
+                        <div class='ajax-poll-item-caption'>
+                            <input class='ajax-poll-item-radio' type='radio' name='_'/> হ্যাঁ
+                        </div>
+                        <div class='ajax-poll-item-stats-box'>
+                            <div class='ajax-poll-item-bar'></div>
+                            <span class='ajax-poll-item-count'></span>
+                            <span class='ajax-poll-item-perc'></span>
+                        </div>
+                    </div>
+                    <div class='ajax-poll-item' tid='no'>
+                        <div class='ajax-poll-item-caption'>
+                            <input class='ajax-poll-item-radio' type='radio' name='_'/> না
+                        </div>
+                        <div class='ajax-poll-item-stats-box'>
+                            <div class='ajax-poll-item-bar'></div>
+                            <span class='ajax-poll-item-count'></span>
+                            <span class='ajax-poll-item-perc'></span>
+                        </div>
+                    </div>
+                    <div class='ajax-poll-item' tid='none'>
+                        <div class='ajax-poll-item-caption'>
+                            <input class='ajax-poll-item-radio' type='radio' name='_'/> মন্তব্য নেই
+                        </div>
+                        <div class='ajax-poll-item-stats-box'>
+                            <div class='ajax-poll-item-bar'></div>
+                            <span class='ajax-poll-item-count'></span>
+                            <span class='ajax-poll-item-perc'></span>
+                        </div>
+                    </div>
+                    <div class='ajax-poll-vote-box'>
+                        <input class='ajax-poll-btn-vote' type='button' value=" Vote "/>
+                        <input class='ajax-poll-btn-view' type='button' value=" View "/>
+                    </div>
+                    <div class='ajax-poll-back-box'>
+                        <input class='ajax-poll-btn-back' type='button' value=" &lt;&lt;&nbsp;Back "/>
+                        <div class='ajax-poll-total-box'>
+                            <span class='ajax-poll-total-caption'>সর্বমোট:</span>
+                            <span class='ajax-poll-total-value'></span>
+                        </div>
+                    </div>
+
+                </form>
+
+            </center>
+
+        </div>
+    </div>
+    {# adspace 567 #}
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/cc773-eximbank.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/call-for-ad.png" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/d5297-kingbrand_lpgas.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+    </div>
+    {# prayer-radio-horoscope-ads8_9 #}
+    <div class="row">
+        {#  money-prayer-adspace  #}
+        <div class="col-md-4">
+            <div class="container-fluid">
+
+                <div class="row">
+                    {# money converter #}
+                    <div class="col-md-6" id="money">
+                        <!-- EXCHANGERATES.ORG.UK EXCHANGE RATE CONVERTER START -->
+                        <script type="text/javascript">
+                            $("#money").hide();
+                            var dcf = 'USD';
+                            var dct = 'BDT';
+                            var mc = '2D6AB4';
+                            var mbg = 'FFFFFF';
+                            var f = 'arial';
+                            var fs = '11';
+                            var fc = '000000';
+                            var tf = 'arial';
+                            var ts = '14';
+                            var tc = 'FFFFFF';
+                            var tz = '6';
+                        </script>
+                        <script type="text/javascript" src="http://www.currency.me.uk/remote/ER-ERC-1.php"></script>
+                        <small>Source:
+                            <a href="http://www.exchangerates.org.uk" target="_new">ExchangeRates.org.uk</a>
+                        </small>
+                        <!-- EXCHANGERATES.ORG.UK  EXCHANGE RATE CONVERTER END -->
+                    </div>
+                    {# prayer schedule #}
+                    <div class="col-md-6" style="padding-left: 5px;">
+                        <div class="prayer">
+                            <div class="title blue">নামাজের সময়</div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                    <tr>
+                                        <td>ফজর</td>
+                                        <td>৮-০৩ মিনিট</td>
+                                    </tr>
+                                    <tr class="blue">
+                                        <td>জোহর</td>
+                                        <td>৮-০৩ মিনিট</td>
+                                    </tr>
+                                    <tr>
+                                        <td>আসর</td>
+                                        <td>৮-০৩ মিনিট</td>
+                                    </tr>
+                                    <tr class="blue">
+                                        <td>মাগরিব</td>
+                                        <td>৮-০৩ মিনিট</td>
+                                    </tr>
+                                    <tr>
+                                        <td>এশা</td>
+                                        <td>৮-০৩ মিনিট</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {# adspace 8 #}
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/21993-kool_230w_150h_2232014.gif" width="100%" height="100%">
+                </a>
+            </div>
+
+        </div>
+        {#  horoscope  #}
+        {% include "horoscope.html" %}
+        {# radio-adspace #}
+        <div class="col-md-4">
+
+            {# bbc radio #}
+            <div class="bbc">
+                <div class="title">
+                    <b>BBC রেডিও অনুষ্ঠান</b>
+                </div>
+                <div class="bbc-list">
+                    <a href="http://www.bbc.co.uk/bengali/audio_console.shtml?programme=bulletin-1" target="_top">
+                        <i class="fa fa-volume-up"></i> প্রভাতী</a>
+                    <a href="http://www.bbc.co.uk/bengali/audio_console.shtml?programme=bulletin-2" target="_top">
+                        <i class="fa fa-volume-up"></i> প্রত্যুষা</a>
+                    <br/>
+                    <span class="bbc_time1">30.00</span>
+                    <span class="bbc_time2">30.00</span>
+                </div>
+                <div class="bbc-list">
+                    <a href="http://www.bbc.co.uk/bengali/audio_console.shtml?programme=bulletin-3" target="_top">
+                        <i class="fa fa-volume-up"></i> প্রবাহ</a>
+                    <a href="http://www.bbc.co.uk/bengali/audio_console.shtml?programme=bulletin-4" target="_top">
+                        <i class="fa fa-volume-up"></i> পরিক্রমা</a>
+                    <br/>
+                    <span class="bbc_time1">30.00</span>
+                    <span class="bbc_time2">30.00</span>
+                </div>
+                <div class="divider" style="margin-top: 40px;"></div>
+                <center>
+                    <a href="http://www.bbc.co.uk/bengali/radio/" target="_blank">
+                        <h4>সাত দিনের রেডিও অনুষ্ঠান</h4>
+                    </a>
+                </center>
+                <div class="divider"></div>
+            </div>
+            {# adspace 9 #}
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/call-for-ad.png" width="100%" height="100%">
+                </a>
+            </div>
+            <!-- ADSPACE_single_view -->
+        </div>
+    </div>
+    <br/>
+    {# newsbox entertainment-sports-tab2  #}
+    <div class="row">
+        {# newsbox entertainment  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'entertainment' %}">
+                <div class="title">বিনোদন</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' entertainment.0.pk %}" target="_blank">{{ entertainment.0.headline|safe }}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' entertainment.0.pk %}" target="_blank">
+                <img src="{% if entertainment.0.image_file %}{{ entertainment.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{ entertainment.0.content|truncatewords:38 }}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' entertainment.0.pk %}" target="_blank">বিস্তারিত</a>
+                </div>
+            </div>
+
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' entertainment.1.pk %}" target="_blank">{{ entertainment.1.headline }}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' entertainment.2.pk %}" target="_blank">{{ entertainment.2.headline }}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' entertainment.3.pk %}" target="_blank">{{ entertainment.3.headline }}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' entertainment.4.pk %}" target="_blank">{{ entertainment.4.headline }}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'entertainment' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox sports  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'sports' %}">
+                <div class="title">খেলাধুলা</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' sports.0.pk %}">{{sports.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' sports.0.pk %}">
+                <img src="{% if sports.0.image_file %}{{ sports.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{ sports.0.content|truncatewords:38 }}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' sports.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">                    
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' sports.1.pk %}">{{sports.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' sports.2.pk %}">{{sports.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' sports.3.pk %}">{{sports.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' sports.4.pk %}">{{sports.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'sports' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# tab2 - weather - scoreBoard #}
+        {% include "tab2.html" %}
+
+    </div>
+    {# newsbox education-science-lifestyle  #}
+    <div class="row">
+        {# newsbox  education #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'education' %}">
+                <div class="title">শিক্ষাঙ্গন</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' education.0.pk %}">{{education.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' education.0.pk %}">
+                <img src="{% if education.0.image_file %}{{ education.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{education.0.content|truncatewords:38}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' education.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' education.1.pk %}">{{education.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' education.2.pk %}">{{education.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' education.3.pk %}">{{education.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' education.4.pk %}">{{education.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'education' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox science  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'science' %}">
+                <div class="title">বিজ্ঞান</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' science.0.pk %}">{{science.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' science.0.pk %}">
+                <img src="{% if science.0.image_file %}{{ science.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{science.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' science.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' science.1.pk %}">{{science.1.headline|safe}}</a>  
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' science.2.pk %}">{{science.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' science.3.pk %}">{{science.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' science.4.pk %}">{{science.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'science' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox  lifestyle #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'life_style' %}">
+                <div class="title">লাইফ স্টাইল</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' life_style.0.pk %}">{{life_style.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' life_style.0.pk %}">
+                <img src="{% if life_style.0.image_file %}{{ life_style.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{life_style.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' life_style.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' life_style.1.pk %}">{{life_style.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' life_style.2.pk %}">{{life_style.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' life_style.3.pk %}">{{life_style.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' life_style.4.pk %}">{{life_style.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'life_style' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# adspace 10_11_12   #}
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/9b5b3-savlon.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href="">
+                    <img src="assets/uploads/ads/9e0d0-swapno.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/4c5c2-amin_mohammad_group-.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+    </div>
+    {# newsbox  national-politics-economics #}
+    <div class="row">
+        {# newsbox national  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'national' %}">
+                <div class="title">জাতীয়</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' national.0.pk %}">{{national.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' national.0.pk %}">
+                <img src="{% if national.0.image_file %}{{ national.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{national.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' national.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' national.1.pk %}">{{national.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' national.2.pk %}">{{national.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' national.3.pk %}">{{national.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' national.4.pk %}">{{national.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'national' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox politics  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'politics' %}">
+                <div class="title">রাজনীতি</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' politics.0.pk %}">{{politics.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' politics.0.pk %}">
+                <img src="{% if politics.0.image_file %}{{ politics.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{politics.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' politics.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' politics.1.pk %}">{{politics.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' politics.2.pk %}">{{politics.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' politics.3.pk %}">{{politics.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' politics.4.pk %}">{{politics.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'politics' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox economics  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'economics' %}">
+                <div class="title">অর্থনীতি</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' economics.0.pk %}">{{economics.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' economics.0.pk %}">
+                <img src="{% if economics.0.image_file %}{{ economics.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{economics.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' economics.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' economics.1.pk %}">{{economics.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' economics.2.pk %}">{{economics.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' economics.3.pk %}">{{economics.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' economics.4.pk %}">{{economics.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'economics' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# newsbox international-foreign-health  #}
+    <div class="row">
+        {# newsbox  international #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'international' %}">
+                <div class="title">আন্তর্জাতিক</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' international.0.pk %}">{{international.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' international.0.pk %}">
+                <img src="{% if international.0.image_file %}{{ international.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{international.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' international.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' international.0.pk %}">{{international.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' international.1.pk %}">{{international.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' international.2.pk %}">{{international.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' international.3.pk %}">{{international.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'international' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+        {# newsbox  foreign life#}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'foreign_life' %}">
+                <div class="title">প্রবাস</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' foreign_life.0.pk %}">{{foreign_life.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' foreign_life.0.pk %}">
+                <img src="{% if foreign_life.0.image_file %}{{ foreign_life.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{foreign_life.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' foreign_life.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' foreign_life.1.pk %}">{{foreign_life.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' foreign_life.2.pk %}">{{foreign_life.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' foreign_life.3.pk %}">{{foreign_life.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' foreign_life.4.pk %}">{{foreign_life.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'foreign_life' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+        {# newsbox  health #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'health' %}">
+                <div class="title">স্বাস্থ্য</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' health.0.pk %}">{{health.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' health.0.pk %}">
+                <img src="{% if health.0.image_file %}{{ health.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{health.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' health.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' health.1.pk %}">{{health.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' health.2.pk %}">{{health.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' health.3.pk %}">{{health.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' health.4.pk %}">{{health.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'health' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {# adspace 13_14_15   #}
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/93a58-bashundhora.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/afb6c-basic-bank.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/48cde-brother_final.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+    </div>
+    {# newsbox  photonews-crime-accident #}
+    <div class="row">
+        {# newsbox  photonews #}
+        <div class="col-md-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="newsbox">
+                        <a href="{% url 'home:category_page' 'photo_news' %}">
+                            <div class="title" style="margin-bottom: 3px;">ছবির কথা</div>
+                        </a>
+
+                        <div id="chobir_kotha" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="active item">
+                                    <a href="index.php/front/detail/29">
+                                        <img src="http://172.93.55.200/bdnews/assets/uploads/news/c87d9-swapno.gif"/>
+                                    </a>
+                                    <div class="carousel-caption"> ওয়েঙ্গারকে রোবেনের জবাব</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="index.php/front/detail/89" class="zero">
+                                        <img src="http://172.93.55.200/bdnews/assets/uploads/news/c3477-unnamed.jpg"/>
+                                    </a>
+                                    <div class="carousel-caption">ইউক্রেন কি চলেই যাবে রাশিয়ার দখলে?</div>
+                                </div>
+                                <div class="item">
+                                    <a href="index.php/front/detail/113" class="zero">
+                                        <img src="http://172.93.55.200/bdnews/assets/uploads/news/a1e2b-walton.gif"/>
+                                    </a>
+                                    <div class="carousel-caption">ইউক্রেনে আগাম নির্বাচনে রাজি প্রেসিডেন্ট</div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#chobir_kotha" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#chobir_kotha" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# newsbox crime  #}
+
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'crime' %}">
+                <div class="title">অপরাধ</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' crime.0.pk %}">{{crime.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' crime.0.pk %}">
+                <img src="{% if crime.0.image_file %}{{ crime.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{crime.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' crime.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' crime.1.pk %}">{{crime.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' crime.2.pk %}">{{crime.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' crime.3.pk %}">{{crime.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' crime.4.pk %}">{{crime.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'crime' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+        {# newsbox accident  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'accident' %}">
+                <div class="title">দুর্ঘটনা</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' accident.0.pk %}">{{accident.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' accident.0.pk %}">
+                <img src="{% if accident.0.image_file %}{{ accident.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{accident.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' accident.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' accident.1.pk %}">{{accident.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' accident.2.pk %}">{{accident.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' accident.3.pk %}">{{accident.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' accident.4.pk %}">{{accident.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'accident' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {# newsbox court-media-videoNews  #}
+    <div class="row">
+        {# newsbox court  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'court' %}">
+                <div class="title">আদালত</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' court.0.pk %}">{{court.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' court.0.pk %}">
+                <img src="{% if court.0.image_file %}{{ court.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{court.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' court.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' court.1.pk %}">{{court.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' court.2.pk %}">{{court.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' court.3.pk %}">{{court.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' court.4.pk %}">{{court.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'court' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+        {# newsbox  media  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'media' %}">
+                <div class="title">মিডিয়া</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' media.0.pk %}">{{media.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' travel.0.pk %}">
+                <img src="{% if media.0.image_file %}{{ media.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{media.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' travel.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' media.1.pk %}">{{media.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' media.2.pk %}">{{media.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' media.3.pk %}">{{media.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' media.4.pk %}">{{media.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'science' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+        {# newsbox  video news #}
+        <div class="col-md-4 newsbox">
+            <div class="flexslider" id="slider">
+                <div class="title" style="margin-bottom: 3px;">ভিডিও সংবাদ</div>
+                <ul class="slides">
+                    <li data-thumb="http://172.93.55.200/bdnews/assets/uploads/vs/f29ad-13.jpg">
+                        <a target="_blank"
+                           href="https://www.youtube.com/watch?v=yfn0ctT418s&list=PLS3XGZxi7cBVNadbxDqZCUgISvabEpu-g">
+                            <img src="http://172.93.55.200/bdnews/assets/uploads/vs/f29ad-13.jpg"/> </a>
+                    </li>
+                    <li data-thumb="http://172.93.55.200/bdnews/assets/uploads/vs/005bd-20.jpg">
+                        <a target="_blank"
+                           href="https://www.youtube.com/watch?v=yfn0ctT418s&list=PLS3XGZxi7cBVNadbxDqZCUgISvabEpu-g">
+                            <img src="http://172.93.55.200/bdnews/assets/uploads/vs/005bd-20.jpg"/> </a>
+                    </li>
+                    <li data-thumb="http://172.93.55.200/bdnews/assets/uploads/vs/e899f-21.jpg">
+                        <a target="_blank" href="">
+                            <img src="http://172.93.55.200/bdnews/assets/uploads/vs/e899f-21.jpg"/> </a>
+                    </li>
+                    <li data-thumb="http://172.93.55.200/bdnews/assets/uploads/vs/cdc31-28.jpg">
+                        <a target="_blank" href="">
+                            <img src="http://172.93.55.200/bdnews/assets/uploads/vs/cdc31-28.jpg"/> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    {# adspace 16_17_18   #}
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/d285a-eximbank.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://>
+                    <img src="assets/uploads/ads/c3535-healthncare_011213.gif" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default panel-body jumbotron adspace">
+                <a href=http://google.com>
+                    <img src="assets/uploads/ads/call-for-ad.png" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+    </div>
+    {# newsbox  travel-child-kitchen  #}
+    <div class="row">
+        {# newsbox travel  #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'travel' %}">
+                <div class="title">ভ্রমন</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' travel.0.pk %}">{{travel.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' travel.0.pk %}">
+                <img src="{% if travel.0.image_file %}{{ travel.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{travel.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' travel.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' travel.1.pk %}">{{travel.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' travel.2.pk %}">{{travel.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' travel.3.pk %}">{{travel.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' travel.4.pk %}">{{travel.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'travel' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+        {# newsbox  woman & child #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'woman_and_child' %}">
+                <div class="title">নারী ও শিশু</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' woman_and_child.0.pk %}">{{woman_and_child.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' woman_and_child.0.pk %}">
+                <img src="{% if woman_and_child.0.image_file %}{{ woman_and_child.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{woman_and_child.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' woman_and_child.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' woman_and_child.1.pk %}">{{woman_and_child.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' woman_and_child.2.pk %}">{{woman_and_child.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' woman_and_child.3.pk %}">{{woman_and_child.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' woman_and_child.4.pk %}">{{woman_and_child.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'woman_and_child' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+        {# newsbox  kitchen #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'kitchen' %}">
+                <div class="title">রান্নাঘর</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' kitchen.0.pk %}">{{kitchen.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' kitchen.0.pk %}">
+                <img src="{% if kitchen.0.image_file %}{{ kitchen.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{kitchen.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' kitchen.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' kitchen.1.pk %}">{{kitchen.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' kitchen.2.pk %}">{{kitchen.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' kitchen.3.pk %}">{{kitchen.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' kitchen.4.pk %}">{{kitchen.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'kitchen' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {# newsbox world-lifeStruggle-editor  #}
+    <div class="row">
+        {# newsbox  mysterious world #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'mysterious_earth' %}">
+                <div class="title">রহস্যময় পৃথিবী</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' mysterious_earth.0.pk %}">{{mysterious_earth.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' mysterious_earth.0.pk %}">
+                <img src="{% if mysterious_earth.0.image_file %}{{ mysterious_earth.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{mysterious_earth.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' mysterious_earth.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' mysterious_earth.1.pk %}">{{mysterious_earth.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' mysterious_earth.2.pk %}">{{mysterious_earth.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' mysterious_earth.3.pk %}">{{mysterious_earth.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' mysterious_earth.4.pk %}">{{mysterious_earth.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'mysterious_earth' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox  life struggle #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'struggle_of_life' %}">
+                <div class="title">জীবন সংগ্রাম</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' struggle_of_life.0.pk %}">{{struggle_of_life.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' struggle_of_life.0.pk %}">
+                <img src="{% if struggle_of_life.0.image_file %}{{ struggle_of_life.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{struggle_of_life.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' struggle_of_life.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' struggle_of_life.1.pk %}">{{struggle_of_life.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' struggle_of_life.2.pk %}">{{struggle_of_life.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' struggle_of_life.3.pk %}">{{struggle_of_life.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' struggle_of_life.4.pk %}">{{struggle_of_life.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'struggle_of_life' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox  editor #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'editorial' %}">
+                <div class="title">সম্পাদকীয়</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' editorial.0.pk %}">{{editorial.0.headline|safe}}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' editorial.0.pk %}">
+                <img src="{% if editorial.0.image_file %}{{ editorial.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{editorial.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' editorial.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' editorial.1.pk %}">{{editorial.1.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' editorial.2.pk %}">{{editorial.2.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' editorial.3.pk %}">{{editorial.3.headline|safe}}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' editorial.4.pk %}">{{editorial.4.headline|safe}}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'editorial' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# newsbox examResult-library  #}
+    <div class="row">
+        {# newsbox  exam result #}
+        <div class="col-md-6 newsbox">
+            <a href="{% url 'home:category_page' 'admission_result' %}">
+                <div class="title">পরীক্ষা,ফলাফল ও ভর্তি</div>
+            </a>
+            <ul class="admission">
+                {% for result in admission_result %}
+                <li>
+                    <a href="{% url 'home:news_details' result.pk %}">{{ result.headline|safe }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="#">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox  library #}
+        <div class="col-md-6 newsbox">
+            <a href="{% url 'home:category_page' 'library' %}">
+                <div class="title">লাইব্রেরী</div>
+            </a>
+            <ul class="admission">
+                {% for result in library %}
+                <li>
+                    <a href="{% url 'home:news_details' result.pk %}">{{ result.headline|safe }}</a>
+                </li>
+                {% endfor %}   
+            </ul>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="#">আরও</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# newsbox  special-blog-archive #}
+    <div class="row">
+        {# newsbox  bdtouch special #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'bdtouch_special' %}">
+                <div class="title">বিডিটাচ স্পেশাল</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' bdtouch_special.0.pk %}">{{ bdtouch_special.0.headline|safe }}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' bdtouch_special.0.pk %}">
+                <img src="{% if bdtouch_special.0.image_file %}{{ bdtouch_special.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{bdtouch_special.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' bdtouch_special.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' bdtouch_special.1.pk %}">{{ bdtouch_special.1.headline|safe }}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' bdtouch_special.2.pk %}">{{ bdtouch_special.2.headline|safe }}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' bdtouch_special.3.pk %}">{{ bdtouch_special.3.headline|safe }}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' bdtouch_special.4.pk %}">{{ bdtouch_special.4.headline|safe }}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'bdtouch_special' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox  blog #}
+        <div class="col-md-4 newsbox">
+            <a href="{% url 'home:category_page' 'bdtouch_blog' %}">
+                <div class="title">বিডিটাচ ব্লগ</div>
+            </a>
+
+            <h2>
+                <a href="{% url 'home:news_details' bdtouch_blog.0.pk %}">{{ bdtouch_blog.0.headline|safe }}</a>
+            </h2>
+
+
+            <a href="{% url 'home:news_details' bdtouch_blog.0.pk %}">
+                <img src="{% if bdtouch_blog.0.image_file %}{{ bdtouch_blog.0.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                         class="img-responsive small"/>
+            </a>
+
+            <h4>{{bdtouch_blog.0.content|truncatewords:38|safe}}</h4>
+
+            <div class="bottom">
+                <!--        <div class="comment"><i class="fa fa-comment-o"></i>10</div>-->
+                <div class="holder">
+                    <a href="{% url 'home:news_details' bdtouch_blog.0.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' bdtouch_blog.1.pk %}">{{ bdtouch_blog.1.headline|safe }}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' bdtouch_blog.2.pk %}">{{ bdtouch_blog.2.headline|safe }}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' bdtouch_blog.3.pk %}">{{ bdtouch_blog.3.headline|safe }}</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="{% url 'home:news_details' bdtouch_blog.4.pk %}">{{ bdtouch_blog.4.headline|safe }}</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="holder">
+                    <a href="{% url 'home:category_page' 'bdtouch_blog' %}">আরও</a>
+                </div>
+            </div>
+        </div>
+        {# newsbox archive #}
+        <div class="col-md-4 newsbox" style="height: 380px; background-color: #EDEDED;">
+            <div class="title" style="margin-bottom: 10px;">আর্কাইভ</div>
+            <div id="datepicker" style="padding-bottom: 10px;"></div>
+            <input type="button" id="go" value="Go" style="width: 100px;">
+        </div>
+    </div>
+
+{% endblock content %}

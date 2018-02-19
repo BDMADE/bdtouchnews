@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+<div class="row">
+    {% for category_news in category_news %}
+    <div class="col-md-8">
+        <div class="cat-box">
+            <h2 style="padding-bottom: 5px;">
+                <a href="{% url 'home:news_details' category_news.pk %}">{{category_news.headline|safe}}</a>
+            </h2>
+
+            <a href="{% url 'home:news_details' category_news.pk %}">
+                <img src="{% if category_news.image_file %}{{ category_news.image_file.url }}{% else %}{{ '/media/images/no-image.png' }}{% endif %}"
+                    class="img-responsive small" />
+            </a>
+            <h4>{{category_news.content|safe|truncatewords:12}}</h4>
+
+            <div class="bottom" style="border-bottom: none;">
+                <div class="holder">
+                    <a href="{% url 'home:news_details' category_news.pk %}">বিস্তারিত</a>
+                </div>
+            </div>
+        </div>
+        <div style="padding-bottom: 15px;"></div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
