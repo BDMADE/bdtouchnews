@@ -24,6 +24,10 @@ class Poll(models.Model):
     def __str__(self):
         return self.question
 
+    def get_vote_count(self):
+        return Vote.objects.filter(poll=self).count()
+    vote_count = property(fget=get_vote_count)
+
 
 class Item(models.Model):
     value = models.CharField(max_length=255, unique=True)
@@ -42,6 +46,10 @@ class Item(models.Model):
 
     def __str__(self):
         return self.value
+
+    def get_vote_count(self):
+        return Vote.objects.filter(item=self).count()
+    vote_count = property(fget=get_vote_count)
 
 
 class Vote(models.Model):
