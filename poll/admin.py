@@ -18,11 +18,11 @@ class PollAdmin(admin.ModelAdmin):
     list_display = ('question', 'date', 'vote_count', 'is_published')
     inlines = [PollItemInline,]
 
-admin.site.register(Poll, PollAdmin)
-
 
 class VoteAdmin(admin.ModelAdmin):
     list_display = ('poll', 'ip', 'created_at')
     list_filter = ('poll', 'created_at')
 
+# registration in admin
 admin.site.register(Vote, VoteAdmin)
+admin.site.register(Poll, PollAdmin)
