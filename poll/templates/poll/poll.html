@@ -29,15 +29,47 @@ document.addEventListener('DOMContentLoaded', function(){
 	{% block poll_content %}
        <div class="poll_style">
     <form method="GET" action="" id="poll_form">
-        <p class="title">{{ poll.title }}</p>
+        <div class="poll-title">{{ poll.question }}</div>
         <ul>
             {% for item in items %}
             <li><input type="radio" name="item" id="item_{{ item.id }}" value="{{ item.id }}" />
                 <label for="item_{{ item.id }}">{{ item.value }}</label></li>
             {% endfor %}
         </ul>
-        <p class="poll_send"><input type="button" id="poll_send" value="vote" /></p>
+        <p class="poll_send"><input type="button" class="poll-btn-vote" id="poll_send" value="vote" /></p>
     </form>
 </div>
 	{% endblock %}
 </div>
+
+{% block poll_stylesheet %}
+    <style type="text/css">
+
+.poll_style {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #c0c0c0;
+    height: 365px;
+    background-color: #ECEADD;
+}
+
+.poll-title {
+    color: #404040;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.poll_style ul{
+    list-style: none;
+}
+
+.poll-btn-vote {
+    float: right;
+    width: 100px;
+    padding: 10px 0;
+}
+
+    </style>
+{% endblock %}

@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'poll.apps.PollConfig',
+    'poll',
     'website.apps.WebsiteConfig',
     'configuration.apps.ConfigurationConfig',
     'horoscope.apps.HoroscopeConfig',

@@ -1,0 +1,35 @@
+
+.poll_style {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #c0c0c0;
+    height: 365px;
+    background-color: #ECEADD;
+}
+
+.poll-title {
+    color: #404040;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.poll-style ul {
+    list-style: none;
+}
+
+.poll-btn-vote {
+    float: right;
+    width: 100px;
+    padding: 10px 0;
+}
+
+.poll-result ul li {
+    margin: 10px 0;
+}
+
+.total_votes {
+    float: right;
+    padding-top: 10px;
+}

@@ -3,16 +3,9 @@
 {% load poll_tags %}
 
 {% block poll_content %}
-<style type="text/css">
-.indicator{
-    background: green;
-    border: 1px solid green;
-    height: 4px;
-}
-</style>
 
-<div class="poll_style">
-	<p class="title">{{ poll.title }}</p>
+<div class="poll-result">
+	<div class="poll-title">{{ poll.question }}</div>
 	<ul>
 		{% for item in items %}
 		<li>{{ item.value }}: <b>{% filter floatformat %}{% percentage poll item %}{% endfilter %}%</b><br>
@@ -20,6 +13,33 @@
 		</li>
 		{% endfor %}
 	</ul>
-	<p>Total votes: <b>{{ poll.get_vote_count }}</b></p><br>
+	<div class="total_votes">Total votes: <b>{{ poll.get_vote_count }}</b></div><br>
 </div>
+{% endblock %}
+
+{% block poll_stylesheet %}
+    <style type="text/css">
+    .indicator{
+    background: green;
+    border: 1px solid green;
+    height: 4px;
+}
+    .poll-result {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #c0c0c0;
+    height: 365px;
+    background-color: #ECEADD;
+}
+    .poll-result ul li {
+    margin: 10px 0;
+}
+
+.total_votes {
+    float: right;
+    padding-top: 10px;
+}
+
+    </style>
 {% endblock %}

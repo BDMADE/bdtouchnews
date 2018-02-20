@@ -37,7 +37,7 @@ class Poll(models.Model):
 
 class Item(models.Model):
     value = models.CharField(max_length=255, unique=True)
-    position = models.SmallIntegerField(default=1, unique=True)
+    position = models.SmallIntegerField(default=1)
     poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
 
     created_at = models.DateTimeField(auto_now_add=True)
