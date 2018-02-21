@@ -289,64 +289,7 @@
             {# news tab 1 #}
             {% include 'tab1.html' %}
             {#   vote     #}
-            <a href="javascript:void(0)">
-                <img src="http://172.93.55.200/bdnews/assets/front/images/vote.jpg" title="bdtouchnews"
-                     class="img-responsive">
-            </a>
-
-            <center>
-                <form class='ajax-poll-form' tid='demo1' action='index.php/front/cast_vote'
-                      style="height: 365px; background-color: #ECEADD;">
-                    <div class='ajax-poll-title' style="margin-bottom: 10px;">
-                        ইপিজেডে শ্রমিকদের সংগঠন করার সুযোগ রেখে শ্রম আইন করা শ্রমিক অধিকার রক্ষায় ভূমিকা রাখবে বলে মনে
-                        করেন কি?
-                    </div>
-
-                    <div class='ajax-poll-item' tid='yes'>
-                        <div class='ajax-poll-item-caption'>
-                            <input class='ajax-poll-item-radio' type='radio' name='_'/> হ্যাঁ
-                        </div>
-                        <div class='ajax-poll-item-stats-box'>
-                            <div class='ajax-poll-item-bar'></div>
-                            <span class='ajax-poll-item-count'></span>
-                            <span class='ajax-poll-item-perc'></span>
-                        </div>
-                    </div>
-                    <div class='ajax-poll-item' tid='no'>
-                        <div class='ajax-poll-item-caption'>
-                            <input class='ajax-poll-item-radio' type='radio' name='_'/> না
-                        </div>
-                        <div class='ajax-poll-item-stats-box'>
-                            <div class='ajax-poll-item-bar'></div>
-                            <span class='ajax-poll-item-count'></span>
-                            <span class='ajax-poll-item-perc'></span>
-                        </div>
-                    </div>
-                    <div class='ajax-poll-item' tid='none'>
-                        <div class='ajax-poll-item-caption'>
-                            <input class='ajax-poll-item-radio' type='radio' name='_'/> মন্তব্য নেই
-                        </div>
-                        <div class='ajax-poll-item-stats-box'>
-                            <div class='ajax-poll-item-bar'></div>
-                            <span class='ajax-poll-item-count'></span>
-                            <span class='ajax-poll-item-perc'></span>
-                        </div>
-                    </div>
-                    <div class='ajax-poll-vote-box'>
-                        <input class='ajax-poll-btn-vote' type='button' value=" Vote "/>
-                        <input class='ajax-poll-btn-view' type='button' value=" View "/>
-                    </div>
-                    <div class='ajax-poll-back-box'>
-                        <input class='ajax-poll-btn-back' type='button' value=" &lt;&lt;&nbsp;Back "/>
-                        <div class='ajax-poll-total-box'>
-                            <span class='ajax-poll-total-caption'>সর্বমোট:</span>
-                            <span class='ajax-poll-total-value'></span>
-                        </div>
-                    </div>
-
-                </form>
-
-            </center>
+            {% include 'vote.html' %}
 
         </div>
     </div>
@@ -450,7 +393,7 @@
 
         </div>
         {#  horoscope  #}
-        {% include "horoscope.html" %}
+        {% include 'horoscope.html' %}
         {# radio-adspace #}
         <div class="col-md-4">
 

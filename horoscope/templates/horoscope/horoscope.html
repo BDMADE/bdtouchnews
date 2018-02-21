@@ -1,0 +1,100 @@
+{% extends "horoscope/base.html" %}
+
+{% block horoscope_content %}
+    <ul class="nav nav-tabs horoscope">
+                <li class="active"><a data-toggle="tab" href="#aquarius" class="horoscope"><img class="responsive-img horoscope-img-small"
+                                                                              src="/media/images/horoscope/aquarius.jpg"
+                                                                              alt="aquarius"/><p class="horoscope-name">কুম্ভ</p></a>
+                </li>
+                <li><a data-toggle="tab" href="#aries"><img class="responsive-img horoscope-img-small"
+                                                            src="/media/images/horoscope/aries.jpg" alt="aries"/><p class="horoscope-name">মেষ</p></a></li>
+                <li><a data-toggle="tab" href="#cancer"><img class="responsive-img horoscope-img-small"
+                                                             src="/media/images/horoscope/cancer.jpg" alt="cancer"/><p class="horoscope-name">কর্কট</p></a></li>
+                <li><a data-toggle="tab" href="#capricorn"><img class="responsive-img horoscope-img-small"
+                                                                src="/media/images/horoscope/capricorn.jpg" alt="capricorn"/><p class="horoscope-name">মকর</p></a></li>
+
+                <li><a data-toggle="tab" href="#gemini"><img class="responsive-img horoscope-img-small"
+                                                             src="/media/images/horoscope/gemini.jpg" alt="gemini"/><p class="horoscope-name">মিথুন</p></a></li>
+                <li><a data-toggle="tab" href="#leo"><img class="responsive-img horoscope-img-small"
+                                                          src="/media/images/horoscope/leo.jpg" alt="leo"/><p class="horoscope-name">সিংহ</p></a></li>
+                <li><a data-toggle="tab" href="#libra"><img class="responsive-img horoscope-img-small"
+                                                            src="/media/images/horoscope/libra.jpg" alt="libra"/><p class="horoscope-name">তুলা</p></a></li>
+                <li><a data-toggle="tab" href="#pisces"><img class="responsive-img horoscope-img-small"
+                                                             src="/media/images/horoscope/pisces.jpg" alt="pisces"/><p class="horoscope-name">মীন</p></a></li>
+
+
+                <li><a data-toggle="tab" href="#sagittarius"><img class="responsive-img horoscope-img-small"
+                                                                  src="/media/images/horoscope/sagittarius.jpg"
+                                                                  alt="sagittarius"/><p class="horoscope-name">ধনু</p></a></li>
+                <li><a data-toggle="tab" href="#scorpio"><img class="responsive-img horoscope-img-small"
+                                                              src="/media/images/horoscope/scorpio.jpg" alt="scorpio"/><p class="horoscope-name">বৃশ্চিক</p></a></li>
+                <li><a data-toggle="tab" href="#taurus"><img class="responsive-img horoscope-img-small"
+                                                             src="/media/images/horoscope/taurus.jpg" alt="taurus"/><p class="horoscope-name">বৃষ</p></a></li>
+                <li><a data-toggle="tab" href="#virgo"><img class="responsive-img horoscope-img-small"
+                                                            src="/media/images/horoscope/virgo.jpg" alt="virgo"/><p class="horoscope-name">কন্যা</p></a></li>
+            </ul>
+    <div class="tab-content">
+                <div id="aquarius" class=" horoscope-font tab-pane fade in active">{{ horoscope.kumvo|safe|truncatewords:34 }}</div>
+                <div id="aries" class="horoscope-font tab-pane fade">{{ horoscope.mesh|safe|truncatewords:34 }}</div>
+                <div id="cancer" class="horoscope-font tab-pane fade">{{ horoscope.korkot|safe|truncatewords:34 }}</div>
+                <div id="capricorn" class="horoscope-font tab-pane fade">{{ horoscope.mokor|safe|truncatewords:34 }}</div>
+
+                <div id="gemini" class="horoscope-font tab-pane fade">{{ horoscope.mithun|safe|truncatewords:34 }}</div>
+                <div id="leo" class="horoscope-font tab-pane fade">{{ horoscope.shingho|safe|truncatewords:34 }}</div>
+                <div id="libra" class="horoscope-font tab-pane fade">{{ horoscope.tula|safe|truncatewords:34 }}</div>
+                <div id="pisces" class="horoscope-font tab-pane fade">{{ horoscope.meen|safe|truncatewords:34 }}</div>
+
+                <div id="sagittarius" class="horoscope-font tab-pane fade">{{ horoscope.dhanu|safe|truncatewords:34 }}</div>
+                <div id="scorpio" class="horoscope-font tab-pane fade">{{ horoscope.brishchik|safe|truncatewords:34 }}</div>
+                <div id="taurus" class="horoscope-font tab-pane fade">{{ horoscope.brisho|safe|truncatewords:34 }}</div>
+                <div id="virgo" class="horoscope-font tab-pane fade">{{ horoscope.konna|safe|truncatewords:34 }}</div>
+
+            </div>
+{% endblock %}
+
+{% block horoscope_stylesheet %}
+    <style type="text/css">
+        .horoscope-font {
+            font-size: 16px;
+            line-height: 24px;
+            padding-left: 7px;
+        }
+
+        .horoscope-img-small {
+                height: auto;
+                width: auto;
+    padding-right: 16px;
+}
+
+        .horoscope-name {
+            padding-left: 0;
+            font-size: 16px;
+            line-height: 25px;
+            margin-left: 12px;
+        }
+
+        .horoscope {
+            background-color: transparent;
+        }
+
+        .horoscope > li > a {
+            padding: 7px 7px;
+            background-color: transparent;
+            border: 1px solid transparent;
+        }
+
+        .horoscope > li.active > a, .horoscope > li.active > a:hover, .horoscope > li.active > a:focus {
+            background-color: transparent;
+            border: 1px solid transparent;
+        }
+
+        .horoscope > li > a:hover {
+            border-color: transparent;
+        }
+
+        .horoscope > li > a:hover, .nav > li > a:focus {
+            text-decoration: none;
+            background-color: transparent;
+        }
+    </style>
+{% endblock %}
