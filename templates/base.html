@@ -1,3 +1,4 @@
+{% load website_tags %}
 <!DOCTYPE HTML>
 <html>
 
@@ -14,7 +15,7 @@
     {% include "header_date_and_search.html" %}
     {% include "navigation.html" %}
     {% include "breaking_news.html" %}
-    {% include "news_headline.html" %}
+    {% get_headlines %}
     {% block content %} {% endblock content %}
     {% include "footer.html" %}
 </div>

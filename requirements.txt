@@ -6,3 +6,6 @@ whitenoise >=3.2
 Pillow >= 2.0.0
 Jinja2 >= 2.0.0
 django-easy-poll >= 0.0.1
+hijricalendar >=0.0.1
+git+git://github.com/hmtanbir/bangla@master#egg=bangla
+

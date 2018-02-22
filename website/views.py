@@ -1,24 +1,24 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from django.http import HttpResponse, HttpResponseRedirect, Http404
-from django.shortcuts import render, get_object_or_404, redirect
 
-# load models
+from django.shortcuts import render
+
+from news.models import News
 from .models import Website
-from advertisement.models import Advertisement
-from news.models import Category, News
 
 
 # Create your views here.
 def category_news(name):
-# Return last five category based news      
-    return News.objects.filter(category__name=name).all().order_by('updated_at').reverse()[:5]
+    # Return last five category based news
+    return News.objects.filter(category__name=name).all().order_by('created_at').reverse()[:5]
+
 
 # views for each category page
 def category_page(request, category_name):
     news = category_news(category_name)
     context = {'category_news': news}
-    return render(request,'category_page.html', context)
+    return render(request, 'category_page.html', context)
+
 
 # views for news details page
 def news_details(request, news_id):
@@ -28,9 +28,11 @@ def news_details(request, news_id):
     context = {'news': news, 'other_news': other_news}
     return render(request, 'news_details.html', context)
 
+
 def type3_view(request, name):
-    context = {'name': name,}
+    context = {'name': name, }
     return render(request, 'type3.html', context)
+
 
 # views for home page
 def home(request):
@@ -86,7 +88,7 @@ def home(request):
                'position_9_news': position_9_news,
                'popular_news': popular_news,
                'entertainment': entertainment,
-               'sports' : sports,
+               'sports': sports,
                'education': education,
                'science': science,
                'life_style': life_style,
@@ -95,7 +97,7 @@ def home(request):
                'economics': economics,
                'international': international,
                'foreign_life': foreign_life,
-               'health' : health,
+               'health': health,
                'photo_news': photo_news,
                'crime': crime,
                'accident': accident,

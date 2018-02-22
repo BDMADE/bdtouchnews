@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^', include("website.urls", namespace='home')),
+url(r'^', include("poll.urls", namespace='poll')),
     url(r'^admin/', admin.site.urls),
 ]
 # uncomment this if you want to debug static and media files
