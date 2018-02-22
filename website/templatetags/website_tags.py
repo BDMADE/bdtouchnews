@@ -80,12 +80,21 @@ def set_query(category_name, limit):
 
 @register.simple_tag
 def get_headlines():
-    # headline_on =
-    headline_limit = int(get_config().headline_limit)
-    headlines = set_query('headline', headline_limit)
+    headline_on = get_config().headline_on
+    headline_link_limit = int(get_config().headline_limit)
+    headlines = set_query('headline', headline_link_limit)
 
     headline_template = 'website/headlines.html'
-    context = {'headlines': headlines }
+    context = {'headlines': headlines, 'headline_on': headline_on, }
     return render_to_string(headline_template, context)
 
+@register.simple_tag
+def get_breaking_news():
+    breaking_news_on = get_config().breaking_news_on
+    breaking_news_limit = int(get_config().breaking_news_limit)
+    breaking_newses = set_query('breaking_news', breaking_news_limit)
+
+    breaking_news_template = 'website/breaking_news.html'
+    context = {'breaking_newses': breaking_newses, 'breaking_news_on': breaking_news_on, }
+    return render_to_string(breaking_news_template, context)
 

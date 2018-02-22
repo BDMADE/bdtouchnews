@@ -1,0 +1,18 @@
+{% if breaking_news_on %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="alert fade in">
+                <div class="breaking-news" id="breaking-news" style="display: none;">
+                    <ul>
+                        {% for breaking_news in breaking_newses %}
+                            <li>
+                                <a href="{% url 'home:news_details' breaking_news.pk %}">{{ breaking_news.headline|safe }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

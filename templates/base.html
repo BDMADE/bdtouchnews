@@ -14,7 +14,7 @@
     {% include "logo.html" %}
     {% include "header_date_and_search.html" %}
     {% include "navigation.html" %}
-    {% include "breaking_news.html" %}
+    {% get_breaking_news %}
     {% get_headlines %}
     {% block content %} {% endblock content %}
     {% include "footer.html" %}
