@@ -16,6 +16,6 @@ class ConfigurationAdmin(admin.ModelAdmin):
     def delete(self, obj):
         return format_html('<a class="deletelink" href="/admin/configuration/configuration/{}/delete/"></a>', obj.id)
 
-    list_display = ('name', 'ts', 'edit', 'delete')
+    list_display = ('name', 'created_at', 'edit', 'delete')
 
 admin.site.register(Configuration, ConfigurationAdmin)
