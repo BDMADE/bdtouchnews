@@ -1,3 +1,4 @@
+autoenv >=1.0.0
 dj-database-url >=0.4.1
 Django >=1.11.10
 gunicorn >=19.6.0
